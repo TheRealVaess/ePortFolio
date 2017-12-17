@@ -1,0 +1,240 @@
+
+/*____________________ACCUEIL ET BASE DU SITE____________________*/
+p, a, h1, h2, h3, h4, h5, h6 {
+    font-family: "Verdana", sans-serif, serif;
+}
+
+body {
+    height: 1000px;
+    width: auto;
+    margin: auto;
+    padding: auto;
+    border: 0;
+}
+
+.section1 {
+    position: relative;
+    height: 700px;
+    background-image: url("../medias/1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover, 100% auto;
+}
+
+.header1 {
+    position: absolute;
+    top: 200px;
+    height: content-box;
+    width: 100%;
+    background-color: rgba(104, 92, 66, 0.6);
+    text-align: center;
+    font-size: 70px;
+    margin: 0;
+    font-weight: bold;
+    opacity: 0.6;
+    letter-spacing: 10px;
+    color: black;
+}
+
+.header2 {
+    position: absolute;
+    top: 300px;
+    text-align: center;
+    height: content-box;
+    width: 100%;
+    background-color: rgba(104, 92, 66, 0.8);
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0;
+    opacity: 0.8;
+    letter-spacing: 5px;
+    color: black;
+    transition: 0.4s;
+}
+
+a.header2:hover {
+    opacity: 0.6;
+    transition: 0.4s
+}
+
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: content-box;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#projet1, #projet2, #projet3, #projet4 {
+    position: relative;
+    width: 281px;
+    height: 281px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    box-shadow: 6px 6px 6px grey;
+    transition: 0.4s;
+    border: lightgray solid 1px;
+}
+
+#projet1 {
+    background-image: url("../medias/2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+}
+#projet1:hover {
+    box-shadow: 3px 3px 3px grey;
+    transition: 0.4s;
+    opacity: 0.6;
+}
+
+#projet2 {
+    background-image: url("../medias/3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+}
+#projet2:hover {
+    box-shadow: 3px 3px 3px grey;
+    transition: 0.4s;
+    opacity: 0.6;
+}
+
+#projet3 {
+    background-image: url("../medias/4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-position: center;
+}
+#projet3:hover {
+    box-shadow: 3px 3px 3px grey;
+    transition: 0.4s;
+    opacity: 0.6;
+}
+
+#projet4 {
+    background-image: url("../medias/5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-position: center;
+}
+#projet4:hover {
+    box-shadow: 3px 3px 3px grey;
+    transition: 0.4s;
+    opacity: 0.6;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: rgba(104, 92, 66, 0.8);
+    color: black;
+    width: 100.5%;
+    height: content-box;
+    line-height: 50px;
+    transition: 1s;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(66, 66, 66, 1);
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+
+/*____________________PROJET SEMESTRE 1____________________*/
+.projet1_paragraphe {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding: 2%;
+}
+
+.projet1_paragraphe img {
+    margin: auto;
+    height: 40%;
+    width: 40%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+.projet1_paragraphe p {
+    margin: auto;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+#logo_projet1 {
+    height: 15%;
+    width: 15%;
+    padding-right: 5%;
+}
+
+/*____________________NUAGE DE MOTS____________________*/
+#img_projet2 {
+    width: 50%;
+    height: 50%;
+    border: lightgray solid 1px;
+    box-shadow: 3px 3px 3px grey;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#p_projet2 {
+    width: 75%;
+    text-align: center;
+}
+
+/*____________________CARTE MENTALE____________________*/
+#img_projet3 {
+    width: 85%;
+    height: 85%;
+    border: lightgray solid 1px;
+    box-shadow: 3px 3px 3px grey;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#p_projet3 {
+    width: 75%;
+    text-align: center;
+}
+
+/*____________________COMPETENCES____________________*/
+.langage {
+    display: flex;
+    width: 85%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#python, #css, #php, #sql, #html, #java, #plsql, #c, #bootstrap, #wordpress, #javascript {
+    width: auto;
+    height: 125px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.langage p {
+    padding-left: 3%;
+}
+
+#section2_competences {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
