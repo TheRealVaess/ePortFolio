@@ -5,6 +5,11 @@
     src: url(../fonts/CaviarDreams.ttf);
 }
 
+@font-face {
+    font-family: MalgunGothic;
+    src: url(../fonts/malgunsl.ttf);
+}
+
 body {
     height: auto;
     width: auto;
@@ -76,36 +81,42 @@ a.header2:hover {
     justify-content: space-around;
 }
 
+.section2 h1 {
+    font-size: 50px;
+}
+
 .section2 a {
-    position: relative;
-    width: 50%;
+    width: 100%;
     height: auto;
     text-decoration: none;
     color: black;
+    transition: 0.8s;
+}
+
+.section2 div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.section2 div:nth-child(even) {
+    background-color: rgb(210, 210, 210);
+}
+
+.section2 div:nth-child(odd) {
+    background-color: white;
 }
 
 .section2 a:hover {
-    text-decoration: none;
-    color: black;
+    transition: 0.8s;
+    opacity: 0.8;
 }
 
-.section2 a:visited {
-    text-decoration: none;
-    color: black;
-}
-
-.section2 a p {
-    position: absolute;
-    margin: 0;
-    font-size: 25px;
-    text-align: center;
-    top: 45%;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: rgba(104, 92, 66, 0.9);
-    padding-top: 10px;
-    padding-bottom: 10px;
+.section2 p {
+    font-family: "MalgunGothic";
 }
 
 .section2 a img {
