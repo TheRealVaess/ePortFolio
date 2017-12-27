@@ -85,7 +85,7 @@ a.header2:hover {
     font-size: 50px;
 }
 
-.section2 a {
+.section2 div a {
     width: 100%;
     height: auto;
     text-decoration: none;
@@ -102,6 +102,10 @@ a.header2:hover {
     text-align: center;
 }
 
+.section2 div h2 {
+    font-size: 35px;
+}
+
 .section2 div:nth-child(even) {
     background-color: rgb(210, 210, 210);
 }
@@ -110,16 +114,17 @@ a.header2:hover {
     background-color: white;
 }
 
-.section2 a:hover {
+.section2 div a:hover {
     transition: 0.8s;
     opacity: 0.8;
 }
 
 .section2 p {
     font-family: "MalgunGothic";
+    font-size: 25px;
 }
 
-.section2 a img {
+.section2 div a img {
     width: 100%;
     height: auto;
 }
@@ -137,88 +142,77 @@ footer p {
 }
 
 
-/*____________________PROJET SEMESTRE 1____________________*/
-.projet1_paragraphe {
+/*____________________PROJETS____________________*/
+.projet-paragraphe {
     display: flex;
     width: 85%;
     margin: auto;
     padding: 2%;
 }
 
-.projet1_paragraphe img {
+.projet-paragraphe img {
     margin: auto;
-    height: 40%;
-    width: 40%;
+    height: 60%;
+    width: 60%;
     padding-right: 1%;
     padding-left: 1%;
 }
-.projet1_paragraphe p {
+.projet-paragraphe p {
     margin: auto;
     padding-right: 1%;
     padding-left: 1%;
+    font-family: MalgunGothic;
+    font-size: 20px;
 }
 
-#logo_projet1 {
-    height: 15%;
-    width: 15%;
-    padding-right: 5%;
+@media screen and (max-width: 959px) {
+    .header1 {
+        font-size: 50px;
+    }
+    
+    .header2 {
+        font-size: 14px;
+    }
+
+    .section2 h1 {
+        font-size: 35px;
+    }
+
+    .section2 div h2 {
+        font-size: 25px;
+    }
+
+    .section2 p {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
 }
 
-/*____________________NUAGE DE MOTS____________________*/
-#img_projet2 {
-    width: 50%;
-    height: 50%;
-    border: lightgray solid 1px;
-    box-shadow: 3px 3px 3px grey;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
+@media screen and (max-width: 479px) {
+    .header1 {
+        font-size: 40px;
+    }
+    
+    .header2 {
+        font-size: 12px;
+    }
 
-#p_projet2 {
-    width: 75%;
-    text-align: center;
-}
+    .section2 h1 {
+        font-size: 30px;
+    }
 
-/*____________________CARTE MENTALE____________________*/
-#img_projet3 {
-    width: 85%;
-    height: 85%;
-    border: lightgray solid 1px;
-    box-shadow: 3px 3px 3px grey;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
+    .section2 div h2 {
+        font-size: 20px;
+    }
 
-#p_projet3 {
-    width: 75%;
-    text-align: center;
-}
+    .section2 p {
+        font-size: 15px;
+    }
 
-/*____________________COMPETENCES____________________*/
-.langage {
-    display: flex;
-    width: 85%;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-
-#python, #css, #php, #sql, #html, #java, #plsql, #c, #bootstrap, #wordpress, #javascript {
-    width: auto;
-    height: 125px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-
-.langage p {
-    padding-left: 3%;
-}
-
-#section2_competences {
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    footer {
+        font-size: 10px;
+    }
 }
