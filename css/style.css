@@ -165,6 +165,14 @@ footer p {
     font-size: 20px;
 }
 
+.projet-paragraphe p:nth-child(even) {
+    border-right: 1px solid rgb(121, 121, 121);
+}
+
+.projet-paragraphe p:nth-child(odd) {
+    border-left: 1px solid rgb(121, 121, 121);
+}
+
 @media screen and (max-width: 959px) {
     .header1 {
         font-size: 50px;
@@ -188,6 +196,37 @@ footer p {
 
     footer {
         font-size: 12px;
+    }
+
+    .projet-paragraphe {
+        flex-direction: column;
+    }
+
+    .projet-paragraphe p {
+        font-size: 18px;
+    }
+
+    .projet-paragraphe img {
+        height: 75%;
+        width: 75%;
+    }
+
+    .projet-paragraphe p:nth-child(even) {
+        border-right: none;
+        border-bottom: 1px solid rgb(121, 121, 121);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .projet-paragraphe p:nth-child(odd) {
+        border-left: none;
+        border-bottom: 1px solid rgb(121, 121, 121);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .projet-paragraphe:nth-child(even) {
+        flex-direction: column-reverse;
     }
 }
 
@@ -214,5 +253,36 @@ footer p {
 
     footer {
         font-size: 10px;
+    }
+
+    .projet-paragraphe {
+        flex-direction: column;
+    }
+
+    .projet-paragraphe p {
+        font-size: 16px;
+    }
+
+    .projet-paragraphe img {
+        height: 70%;
+        width: 70%;
+    }
+
+    .projet-paragraphe p:nth-child(even) {
+        border-right: none;
+        border-bottom: 1px solid rgb(121, 121, 121);
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    
+    .projet-paragraphe p:nth-child(odd) {
+        border-left: none;
+        border-bottom: 1px solid rgb(121, 121, 121);
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .projet-paragraphe:nth-child(even) {
+        flex-direction: column-reverse;
     }
 }
