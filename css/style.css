@@ -129,6 +129,11 @@ a.header2:hover {
     height: auto;
 }
 
+#projet6-CV img {
+    width: 10%;
+    height: auto;
+}
+
 footer {
     text-align: center;
     background-color: rgba(66, 66, 66, 1);
