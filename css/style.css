@@ -86,7 +86,8 @@ a.header2:hover {
 }
 
 .section2 div a {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     height: auto;
     text-decoration: none;
     color: black;
@@ -148,34 +149,21 @@ footer p {
 
 
 /*____________________PROJETS____________________*/
-.projet-paragraphe {
+.projet-section {
     display: flex;
+    flex-direction: column;
     width: 85%;
     margin: auto;
-    padding: 2%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-left: 2px solid darkgrey;
+    padding-left: 5px;
 }
 
-.projet-paragraphe img {
-    margin: auto;
-    height: 60%;
-    width: 60%;
-    padding-right: 1%;
-    padding-left: 1%;
-}
-.projet-paragraphe p {
-    margin: auto;
-    padding-right: 1%;
-    padding-left: 1%;
+.projet-section p {
+    margin: 0;
     font-family: MalgunGothic;
-    font-size: 20px;
-}
-
-.projet-paragraphe p:nth-child(even) {
-    border-right: 1px solid rgb(121, 121, 121);
-}
-
-.projet-paragraphe p:nth-child(odd) {
-    border-left: 1px solid rgb(121, 121, 121);
+    font-size: 23px;
 }
 
 @media screen and (max-width: 959px) {
@@ -203,35 +191,8 @@ footer p {
         font-size: 12px;
     }
 
-    .projet-paragraphe {
-        flex-direction: column;
-    }
-
-    .projet-paragraphe p {
-        font-size: 18px;
-    }
-
-    .projet-paragraphe img {
-        height: 75%;
-        width: 75%;
-    }
-
-    .projet-paragraphe p:nth-child(even) {
-        border-right: none;
-        border-bottom: 1px solid rgb(121, 121, 121);
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    
-    .projet-paragraphe p:nth-child(odd) {
-        border-left: none;
-        border-bottom: 1px solid rgb(121, 121, 121);
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .projet-paragraphe:nth-child(even) {
-        flex-direction: column-reverse;
+    .projet-section p {
+        font-size: 20px;
     }
 }
 
@@ -260,34 +221,76 @@ footer p {
         font-size: 10px;
     }
 
-    .projet-paragraphe {
-        flex-direction: column;
-    }
-
-    .projet-paragraphe p {
+    .projet-section p {
         font-size: 16px;
     }
-
-    .projet-paragraphe img {
-        height: 70%;
-        width: 70%;
-    }
-
-    .projet-paragraphe p:nth-child(even) {
-        border-right: none;
-        border-bottom: 1px solid rgb(121, 121, 121);
-        padding-top: 6px;
-        padding-bottom: 6px;
-    }
-    
-    .projet-paragraphe p:nth-child(odd) {
-        border-left: none;
-        border-bottom: 1px solid rgb(121, 121, 121);
-        padding-top: 6px;
-        padding-bottom: 6px;
-    }
-
-    .projet-paragraphe:nth-child(even) {
-        flex-direction: column-reverse;
-    }
 }
+
+.carousel-container {
+    position: relative;
+    width: 75%;
+    margin: auto;
+}
+
+.mySlides {
+    margin-top: 30px;
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.previous:hover, .next:hover {
+    background-color: rgba(0,0,0,0.9);
+}
+
+.dots {
+    text-align: center;
+}
+
+.imageSelect {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .imageSelect:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }

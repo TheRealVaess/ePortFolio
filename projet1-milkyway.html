@@ -15,29 +15,36 @@
                     <a href="./index.html" class="header2">RETOUR ACCUEIL</a>
                 </div>
             </div>
-            <div class="projet-section">
-                <div class="projet-paragraphe">
+            
+            <div class="carousel-container">
+                <div class="mySlides fade">
                     <img src="./medias/projet1-milkyway/1.png">
-                    <p>Voici le projet de site web statique que j'ai réalisé en groupe de deux au cours
-                        du premier semestre de mon DUT d'informatique : MilkyWay.<br>
-                        Sur cette photo, vous voyez la page d'accueil du site.</p>
                 </div>
-                <div class="projet-paragraphe">
-                    <p>Le principe était que nous devions réaliser un site web sur le thème de notre choix. Nous 
-                        avons donc choisi la vente de planètes, étoiles, astéroïdes, etc...<br>
-                        Sur celle-ci, vous voyez la page de présentation des planètes à vendre ainsi que la barre de recherche des produits.</p>
+                <div class="mySlides fade">
                     <img src="./medias/projet1-milkyway/2.png">
                 </div>
-                <div class="projet-paragraphe">
+                <div class="mySlides fade">
                     <img src="./medias/projet1-milkyway/3.png">
-                    <p>Nous avons programmé le site en HTML, CSS, et JavaScript, sans Framework (comme Bootstrap), 
-                        et est entièrement Responsive.<br>
-                        On voit ici la page de contact.</p>
                 </div>
+                <a class="previous" onClick="plusSlide(-1)">&#10094;</a>
+                <a class="next" onClick="plusSlide(1)">&#10095;</a>
+            </div>
+            <div class="dots">
+                <span class="imageSelect" onclick="currentSlide(1)"></span> 
+                <span class="imageSelect" onclick="currentSlide(2)"></span> 
+                <span class="imageSelect" onclick="currentSlide(3)"></span> 
+            </div>
+            <div class="projet-section">
+                <p>Voici le projet de site web statique que j'ai réalisé en groupe de deux au cours
+                    du premier semestre de mon DUT d'informatique : MilkyWay.</p>
+                <p>Le principe était que nous devions réaliser un site web sur le thème de notre choix. Nous 
+                    avons donc choisi la vente de planètes, étoiles, astéroïdes, etc...</p>
+                <p>Nous avons programmé le site en HTML, CSS, et JavaScript, sans Framework (comme Bootstrap), et est entièrement Responsive.</p>
             </div>
         </main>
         <footer>
             <p>Site Web entièrement programmé en HTML et CSS.</p>
         </footer>
+        <script type="text/javascript" src="./js/carousel.js"></script>
     </body>
 </html>

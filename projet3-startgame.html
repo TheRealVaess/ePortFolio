@@ -15,34 +15,40 @@
                     <a href="./index.html" class="header2">RETOUR ACCUEIL</a>
                 </div>
             </div>
-            <div class="projet-section">
-                <div class="projet-paragraphe">
+            <div class="carousel-container">
+                <div class="mySlides fade">
                     <img src="./medias/projet3-startgame/1.png">
-                    <p>Nous avons réalisé ce projet durant le premier semestre de ma deuxième année de DUT 
-                        d'informatique. Nous devions inventer un site fictif de vente en ligne alors nous avons 
-                        choisi la vente de jeux vidéo.<br>
-                        Voici la page d'accueil avec la liste des jeux.</p>
                 </div>
-                <div class="projet-paragraphe">
-                    <p>Ce site est un site dynamique où peut créer un compte, se connecter, ajouter des jeux 
-                        à notre panier...<br>
-                        Sur la image ci-contre, on voit la page de connexion.</p>
+                <div class="mySlides fade">
                     <img src="./medias/projet3-startgame/2.png">
                 </div>
-                <div class="projet-paragraphe">
+                <div class="mySlides fade">
                     <img src="./medias/projet3-startgame/3.png">
-                    <p>En tant qu'admin, on peut ajouter des jeux, des DLC, des utilisateurs, etc...<br>
-                        Ici : la page des détails d'un jeu.</p>
                 </div>
-                <div class="projet-paragraphe">
-                    <p>Le site a été programmé en HTML, CSS, PHP, et SQL,avec Bootstrap.<br>
-                        Et ici le panier d'un utilisateur.</p>
+                <div class="mySlides fade">
                     <img src="./medias/projet3-startgame/4.png">
                 </div>
+                <a class="previous" onClick="plusSlide(-1)">&#10094;</a>
+                <a class="next" onClick="plusSlide(1)">&#10095;</a>
+            </div>
+            <div class="dots">
+                <span class="imageSelect" onclick="currentSlide(1)"></span>
+                <span class="imageSelect" onclick="currentSlide(2)"></span>
+                <span class="imageSelect" onclick="currentSlide(3)"></span>
+                <span class="imageSelect" onclick="currentSlide(4)"></span>
+            </div>
+            <div class="projet-section">
+                <p>Nous avons réalisé ce projet durant le premier semestre de ma deuxième année de DUT 
+                    d'informatique. Nous devions inventer un site fictif de vente en ligne alors nous avons 
+                    choisi la vente de jeux vidéo.</p>
+                <p>Ce site est un site dynamique où peut créer un compte, se connecter, ajouter des jeux à notre panier...</p>
+                <p>En tant qu'admin, on peut ajouter des jeux, des DLC, des utilisateurs, etc...</p>
+                <p>Le site a été programmé en HTML, CSS, PHP, et SQL,avec Bootstrap.</p>
             </div>
         </main>
         <footer>
             <p>Site Web entièrement programmé en HTML et CSS.</p>
         </footer>
+        <script type="text/javascript" src="./js/carousel.js"></script>
     </body>
 </html>
