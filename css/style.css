@@ -10,9 +10,15 @@
     src: url(../fonts/malgunsl.ttf);
 }
 
+@font-face {
+    font-family: LemonMilk;
+    src: url(../fonts/LemonMilklight.otf);
+}
+
 body {
+    display: flex;
     height: auto;
-    width: auto;
+    width: 100%;
     margin: auto;
     padding: auto;
     border: 0;
@@ -27,6 +33,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover, 100% auto;
+    width: 85%;
 }
 
 .section1 {
@@ -180,67 +187,6 @@ footer p {
     font-size: 23px;
 }
 
-@media screen and (max-width: 959px) {
-    .header1 {
-        font-size: 50px;
-    }
-    
-    .header2 {
-        font-size: 14px;
-    }
-
-    .section2 h1 {
-        font-size: 35px;
-    }
-
-    .section2 div h2 {
-        font-size: 25px;
-    }
-
-    .section2 p {
-        font-size: 18px;
-    }
-
-    footer {
-        font-size: 12px;
-    }
-
-    .projet-section p {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    .header1 {
-        font-size: 40px;
-    }
-    
-    .header2 {
-        font-size: 12px;
-    }
-
-    .section2 h1 {
-        font-size: 30px;
-    }
-
-    .section2 div h2 {
-        font-size: 20px;
-    }
-
-    .section2 p {
-        font-size: 15px;
-    }
-
-    footer {
-        font-size: 10px;
-    }
-
-    .projet-section p {
-        font-size: 16px;
-    }
-}
-
-
 /*____________________CAROUSELS____________________*/
 .carousel-container {
     position: relative;
@@ -312,50 +258,186 @@ footer p {
 }
 
 nav {
-    position: fixed;
-    right: 0;
-    top: 40%;
-    background-color: rgba(0,0,0,0.6);
-    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 15%;
 }
 
-.menu {
+.menu_big_screen {
     display: flex;
-    width: auto;
-    height: 15px;
-    width: 15px;
-    margin: 10px;
-    border-radius: 50%;
+    flex-direction: column;
+    position: fixed;
+    width: inherit;
+}
+
+.menu_tiles_big_screen {
+    width: 100%;
+    min-height: 70px;
     background-color: white;
     transition: 0.5s;
+    text-decoration: none;
+    text-align: center;
+    font-size: 23px;
+    font-family: "LemonMilk";
+    border-bottom: 1px solid grey;
+    color: rgba(60, 60, 60, 0.9);
+}
+
+.menu_tiles_big_screen p {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10%;
 }
 
 #menu_dot1:hover {
-    background-color: rgba(255, 0, 0, 0.7);
+    color: rgba(255, 0, 0, 1);
     transition: 0.5s;
 }
 
 #menu_dot2:hover {
-    background-color: rgba(255, 110, 0, 0.7);
+    color: rgba(255, 110, 0, 1);
     transition: 0.5s;
 }
 
 #menu_dot3:hover {
-    background-color: rgba(255, 221, 0, 0.7);
+    color: rgba(255, 221, 0, 1);
     transition: 0.5s;
 }
 
 #menu_dot4:hover {
-    background-color: rgba(93, 255, 0, 0.7);
+    color: rgba(93, 255, 0, 1);
     transition: 0.5s;
 }
 
 #menu_dot5:hover {
-    background-color: rgba(0, 255, 242, 0.7);
+    color: rgba(0, 255, 242, 1);
     transition: 0.5s;
 }
 
 #menu_dot6:hover {
-    background-color: rgba(0, 17, 255, 0.7);
+    color: rgba(0, 17, 255, 1);
     transition: 0.5s;
+}
+
+@media screen and (max-width: 1110px) {
+    .menu_tiles_big_screen {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .header1 {
+        font-size: 50px;
+    }
+    
+    .header2 {
+        font-size: 14px;
+    }
+
+    .section2 h1 {
+        font-size: 35px;
+    }
+
+    .section2 div h2 {
+        font-size: 25px;
+    }
+
+    .section2 p {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .projet-section p {
+        font-size: 20px;
+    }
+
+    .menu_big_screen {
+        display: none;
+    }
+    
+    .menu_tiles_big_screen {
+        display: none;
+    }
+
+    .menu_small_screen {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: inherit;
+    }
+
+    .menu_tiles_small_screen {
+        width: 100%;
+        min-height: 75px;
+        background-color: white;
+        transition: 0.5s;
+        text-decoration: none;
+        text-align: center;
+        font-size: 23px;
+        font-family: "LemonMilk";
+        border-bottom: 1px solid grey;
+        color: rgba(60, 60, 60, 0.9);
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .header1 {
+        font-size: 40px;
+    }
+    
+    .header2 {
+        font-size: 12px;
+    }
+
+    .section2 h1 {
+        font-size: 30px;
+    }
+
+    .section2 div h2 {
+        font-size: 20px;
+    }
+
+    .section2 p {
+        font-size: 15px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    .projet-section p {
+        font-size: 16px;
+    }
+
+    .menu_big_screen {
+        display: none;
+    }
+    
+    .menu_tiles_big_screen {
+        display: none;
+    }
+
+    .menu_small_screen {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: inherit;
+    }
+
+    .menu_tiles_small_screen {
+        width: 100%;
+        min-height: 75px;
+        background-color: white;
+        transition: 0.5s;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+        font-family: "LemonMilk";
+        border-bottom: 1px solid grey;
+        color: rgba(60, 60, 60, 0.9);
+    }
 }
