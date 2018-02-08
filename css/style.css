@@ -59,11 +59,13 @@ main {
     opacity: 0.8;
     letter-spacing: 10px;
     color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
     margin-bottom: 1%;
 }
 
 .header2 {
-    background-color: rgba(66, 76, 104, 0.9);
+    background-color: rgba(66, 100, 104, 0.9);
     text-align: center;
     text-decoration: none;
     font-size: 20px;
@@ -257,11 +259,15 @@ footer p {
     to {opacity: 1}
 }
 
-nav {
+.menu1 {
     display: flex;
     flex-direction: row;
     background-color: white;
     width: 15%;
+}
+
+.menu2 {
+    display: none;
 }
 
 .menu_big_screen {
@@ -355,12 +361,57 @@ nav {
         font-size: 20px;
     }
 
-    .menu_big_screen {
+    .menu1 {
         display: none;
     }
-    
-    .menu_tiles_big_screen {
-        display: none;
+
+    .hamburger-menu {
+        display: block;
+        position: fixed;
+        right: 0;
+    }
+
+    .hamburger-menu-bar {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+  
+        background: #cdcdcd;
+        border-radius: 3px;
+  
+        z-index: 1;
+  
+        transform-origin: 4px 0px;
+  
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+
+    .hamburger-menu-bar:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    .hamburger-menu-bar:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    .menu2 {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        background-color: white;
+        width: 70%;
+        height: 100vh;
+        right: 0;
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+    }
+
+    main {
+        width: 100%;
     }
 
     .menu_small_screen {
@@ -381,6 +432,10 @@ nav {
         font-family: "LemonMilk";
         border-bottom: 1px solid grey;
         color: rgba(60, 60, 60, 0.9);
+    }
+
+    input:checked ~ .menu2 {
+        transform: none;
     }
 }
 
@@ -413,11 +468,7 @@ nav {
         font-size: 16px;
     }
 
-    .menu_big_screen {
-        display: none;
-    }
-    
-    .menu_tiles_big_screen {
+    .menu1 {
         display: none;
     }
 
