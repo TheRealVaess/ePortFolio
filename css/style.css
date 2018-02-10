@@ -69,7 +69,9 @@ main {
     text-align: center;
     text-decoration: none;
     font-size: 20px;
+    line-height: 21px;
     margin: 0;
+    font-weight: bold;
     letter-spacing: 5px;
     color: black;
     transition: 0.4s;
@@ -365,7 +367,7 @@ footer p {
         display: none;
     }
 
-    .hamburger-menu {
+    .hamburger-menu-bar, input {
         display: block;
         position: fixed;
         right: 0;
@@ -381,6 +383,7 @@ footer p {
         background: #cdcdcd;
         border-radius: 3px;
   
+        right: 0;
         z-index: 1;
   
         transform-origin: 4px 0px;
@@ -402,12 +405,6 @@ footer p {
         display: flex;
         position: absolute;
         flex-direction: row;
-        background-color: white;
-        width: 70%;
-        height: 100vh;
-        right: 0;
-        transform-origin: 0% 0%;
-        transform: translate(100%, 0);
     }
 
     main {
@@ -418,11 +415,16 @@ footer p {
         display: flex;
         flex-direction: column;
         position: fixed;
-        width: inherit;
+        background-color: white;
+        width: 80%;
+        height: 100vh;
+        right: 0;
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
     }
 
     .menu_tiles_small_screen {
-        width: 100%;
+        width: 70%;
         min-height: 75px;
         background-color: white;
         transition: 0.5s;
@@ -434,7 +436,11 @@ footer p {
         color: rgba(60, 60, 60, 0.9);
     }
 
-    input:checked ~ .menu2 {
+    input {
+        z-index: 1;
+    }
+
+    input:checked ~ .menu_small_screen {
         transform: none;
     }
 }
