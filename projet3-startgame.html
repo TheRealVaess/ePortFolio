@@ -1,69 +1,66 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Mon e-portfolio</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <main>
-            <div class="section1">
-                <div>
-                    <p class="header1">"StartGame"</p>
-                </div>
+
+<head>
+    <title>Mon e-portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav class="menu_big_screen">
+            <a class="menu_tiles_big_screen" href="./index.html">Accueil</a>
+        </nav>
+    </header>
+    <main>
+        <div id="welcome-section-projet">
+            <div>
+                <p class="header1">"StartGame"</p>
             </div>
-            <div class="projet-container">
-            <div class="carousel-container">
-                <div class="mySlides fade">
+            <p id="scrolldown">&#10095;</p>
+        </div>
+        <div class="projet-container">
+            <div class="slideshow">
+                <div>
                     <img src="./medias/projet3-startgame/1.png">
                 </div>
-                <div class="mySlides fade">
+                <div>
                     <img src="./medias/projet3-startgame/2.png">
                 </div>
-                <div class="mySlides fade">
+                <div>
                     <img src="./medias/projet3-startgame/3.png">
                 </div>
-                <div class="mySlides fade">
+                <div>
                     <img src="./medias/projet3-startgame/4.png">
                 </div>
-                <a class="previous" onClick="plusSlide(-1)">&#10094;</a>
-                <a class="next" onClick="plusSlide(1)">&#10095;</a>
-            </div>
-            <div class="dots">
-                <span class="imageSelect" onclick="currentSlide(1)"></span>
-                <span class="imageSelect" onclick="currentSlide(2)"></span>
-                <span class="imageSelect" onclick="currentSlide(3)"></span>
-                <span class="imageSelect" onclick="currentSlide(4)"></span>
             </div>
             <div class="projet-section">
-                <p>Nous avons réalisé ce projet durant le premier semestre de ma deuxième année de DUT 
-                    d'informatique. Nous devions inventer un site fictif de vente en ligne alors nous avons 
-                    choisi la vente de jeux vidéo.</p>
-                <p>Ce site est un site dynamique où peut créer un compte, se connecter, ajouter des jeux à notre panier...</p>
-                <p>En tant qu'admin, on peut ajouter des jeux, des DLC, des utilisateurs, etc...</p>
-                <p>Le site a été programmé en HTML, CSS, PHP, et SQL,avec Bootstrap.</p>
+                <p>Thème : Vente de jeux vidéo</p>
+                <p>Période de réalisation : Octobre 2017 – Décembre 2017</p>
+                <p>Projet réalisé en groupe.</p>
+                <p>Technologie, langages, et méthodes utilisées :</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                    <li>Responsive</li>
+                </ul>
             </div>
         </div>
         <footer>
             <p>Site Web programmé en HTML, CSS, et JavaScript.</p>
         </footer>
-        </main>
-        <nav class="menu1">
-            <div class="menu_big_screen">
-                <a class="menu_tiles_big_screen" id="menu_dot1" href="./index.html"><p>Retour accueil</p></a>
-            </div>
-        </nav>
-        <nav class="menu2">
-            <input type="checkbox">
-            <span class="hamburger-menu-bar"></span>
-            <span class="hamburger-menu-bar"></span>
-            <span class="hamburger-menu-bar"></span>
-            <div class="menu_small_screen">
-                <a class="menu_tiles_small_screen" href="./index.html"><p>Retour accueil</p></a>
-            </div>
-        </nav>
-        <script type="text/javascript" src="./js/carousel.js"></script>
-    </body>
+    </main>
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/slideshow.js"></script>
+</body>
+
 </html>

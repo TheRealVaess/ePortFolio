@@ -1,66 +1,62 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Mon e-portfolio</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <main>
-            <div class="section1">
-                <div>
-                    <p class="header1">Site pour les licences professionnelles de l'IUT de Montpellier</p>
-                </div>
+
+<head>
+    <title>Mon e-portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav class="menu_big_screen">
+            <a class="menu_tiles_big_screen" href="./index.html">Accueil</a>
+        </nav>
+    </header>
+    <main>
+        <div id="welcome-section-projet">
+            <div>
+                <p class="header1">Site pour les licences professionnelles de l'IUT de Montpellier</p>
             </div>
-            <div class="projet-container">
-            <div class="carousel-container">
-                <div class="mySlides fade">
+            <p id="scrolldown">&#10095;</p>
+        </div>
+        <div class="projet-container">
+            <div class="slideshow">
+                <div>
                     <img src="./medias/projet2-LP/1.png">
                 </div>
-                <div class="mySlides fade">
+                <div>
                     <img src="./medias/projet2-LP/2.png">
                 </div>
-                <div class="mySlides fade">
+                <div>
                     <img src="./medias/projet2-LP/3.png">
                 </div>
-                <a class="previous" onClick="plusSlide(-1)">&#10094;</a>
-                <a class="next" onClick="plusSlide(1)">&#10095;</a>
-            </div>
-            <div class="dots">
-                <span class="imageSelect" onclick="currentSlide(1)"></span> 
-                <span class="imageSelect" onclick="currentSlide(2)"></span> 
-                <span class="imageSelect" onclick="currentSlide(3)"></span> 
             </div>
             <div class="projet-section">
-                    <p>Ce projet consistait à faire un site web dynamique pour les élèves des licences professionnelles 
-                        de notre IUT. Ce projet a été fait en groupe de quatre durant le second semestre de mon DUT 
-                        d'informatique.</p>
-                    <p>Le site n'a pas été utilisé par l'IUT car ce projet devait être fait par tous les groupes 
-                        et servait donc d'entraînement pour la gestion de projet avec des méthodes agiles.</p>
-                    <p>Pour le créer, nous avons utilisé le CMS Wordpress qui est l'un des plus connu et 
-                        qui nous permettrait donc d'exploiter le grand nombre de plugin disponibles.</p>
-                </div>
+                <p>Thème : Site pour les licences professionnelles de l'IUT de Montpellier</p>
+                <p>Période de réalisation : Février 2017 – Juin 2017</p>
+                <p>Projet réalisé en groupe.</p>
+                <p>Technologie, langages, et méthodes utilisées :</p>
+                <ul>
+                    <li>Wordpress</li>
+                    <li>Gestion de projet : méthodes agiles (Scrum)</li>
+                </ul>
+                <p>Lien du site :
+                    <a href="http://projet-iut.livehost.fr/" target="_blank">http://projet-iut.livehost.fr/</a>
+                </p>
             </div>
-            <footer>
-                <p>Site Web programmé en HTML, CSS, et JavaScript.</p>
-            </footer>
-        </main>
-        <nav class="menu1">
-            <div class="menu_big_screen">
-                <a class="menu_tiles_big_screen" id="menu_dot1" href="./index.html"><p>Retour accueil</p></a>
-            </div>
-        </nav>
-        <nav class="menu2">
-            <input type="checkbox">
-            <span class="hamburger-menu-bar"></span>
-            <span class="hamburger-menu-bar"></span>
-            <span class="hamburger-menu-bar"></span>
-            <div class="menu_small_screen">
-                <a class="menu_tiles_small_screen" href="./index.html"><p>Retour accueil</p></a>
-            </div>
-        </nav>
-        <script type="text/javascript" src="./js/carousel.js"></script>
-    </body>
+        </div>
+        <footer>
+            <p>Site Web programmé en HTML, CSS, et JavaScript.</p>
+        </footer>
+    </main>
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/slideshow.js"></script>
+</body>
+
 </html>
