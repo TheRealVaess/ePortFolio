@@ -1,0 +1,125 @@
+/*_____________________________________________________*/
+/*____________________MEDIA QUERIES____________________*/
+/*_____________________________________________________*/
+
+@media screen and (max-width: 1599px) {
+    .header1 {
+        font-size: 80px;
+    }
+
+    .projet-details #projets-section a::before {
+        font-size: 20px;
+    }
+
+    .projet-details .header1 {
+        font-size: 100px;
+    }
+
+    .projet-details #scrolldown {
+        font-size: 50px;
+    }
+
+    .projet-details .projet-description p, .projet-details .projet-description ul {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header1 {
+        font-size: 50px;
+    }
+
+    .projet-details #projets-section div {
+        width: 30%;
+        height: 45vh;
+    }
+
+    #projets h1, #cv-section h1, #contact-section h1 {
+        font-size: 35px;
+    }
+
+    .menu_tiles_big_screen, #portfolio-title {
+        font-size: 18px;
+    }
+
+    #projets-section a::before {
+        font-size: 18px;
+    }
+
+    .projet-details .header1 {
+        font-size: 90px;
+    }
+
+    .projet-details #scrolldown {
+        font-size: 40px;
+    }
+
+    .projet-description p, .projet-description ul {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .menu_big_screen {
+        grid-template-columns: 50vw auto auto auto;
+    }
+
+    .header1 {
+        font-size: 40px;
+    }
+
+    #projets h1, #cv-section h1, #contact-section h1 {
+        font-size: 25px;
+    }
+
+    #projets-section div {
+        height: 30vh;
+    }
+
+    #projets-section a::before {
+        font-size: 15px;
+    }
+
+    .projet-details .header1 {
+        font-size: 75px;
+    }
+
+    .projet-details #scrolldown {
+        font-size: 30px;
+    }
+
+    .projet-description p, .projet-description ul {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .menu_big_screen {
+        grid-template-columns: 40vw auto auto auto;
+    }
+
+    .header1 {
+        font-size: 30px;
+    }
+
+    .menu_tiles_big_screen, #portfolio-title {
+        font-size: 15px;
+    }
+
+    #projets-section div {
+        width: 45%;
+        height: 25vh;
+    }
+
+    .projet-details .header1 {
+        font-size: 60px;
+    }
+
+    .projet-details #scrolldown {
+        font-size: 20px;
+    }
+
+    .projet-description p, .projet-description ul {
+        font-size: 14px;
+    }
+}

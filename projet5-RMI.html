@@ -4,27 +4,31 @@
 
 <head>
     <title>Mon e-portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body class="projet-details">
     <header>
         <nav class="menu_big_screen">
             <a class="menu_tiles_big_screen" href="./index.html">Accueil</a>
         </nav>
     </header>
     <main>
-        <div id="welcome-section-projet">
+        <div id="particles-js2" class="welcome-section">
             <div>
-                <p class="header1">"Répertoire des Métiers de l'Informatique"</p>
+                <p class="header1 neon-blue">"Répertoire des Métiers de l'Informatique"</p>
             </div>
             <p id="scrolldown">&#10095;</p>
         </div>
-        <div class="projet-container">
+        <div class="projet-section menu_background_scroll">
             <div class="slideshow">
                 <div>
                     <img src="./medias/projet5-RMI/1.png">
@@ -48,7 +52,7 @@
                     <img src="./medias/projet5-RMI/7.png">
                 </div>
             </div>
-            <div class="projet-section">
+            <div class="projet-description">
                 <p>Thème : Répertoire de fiches informatives sur les métiers de l'informatique et sur certaines entreprises</p>
                 <p>Période de réalisation : Octobre 2017 – Décembre 2017</p>
                 <p>Projet réalisé en groupe.</p>
@@ -67,12 +71,17 @@
             </div>
         </div>
         <footer>
-            <p>Site Web programmé en HTML, CSS, et JavaScript.</p>
+            <p>Site Web programmé en HTML, CSS, et JavaScript. Utilisation de JQuery, Slick, et Particles.js. Utilisation des polices d'écriture "LemonMilk", "Malgun Gothic", "Iceland", et "CaviarDreams".</p>
         </footer>
     </main>
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./slick/slick.min.js"></script>
     <script type="text/javascript" src="./js/slideshow.js"></script>
+    <script type="text/javascript" src="./js/menu_background.js"></script>
+    <script type="text/javascript" src="./js/particles/particles.min.js"></script>
+    <script type="text/javascript">
+        particlesJS.load('particles-js2', './js/particles/particles2.json');
+    </script>
 </body>
 
 </html>

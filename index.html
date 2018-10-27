@@ -4,7 +4,11 @@
 
 <head>
     <title>Mon e-portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -12,19 +16,30 @@
 <body>
     <header>
         <nav class="menu_big_screen">
-            <a class="menu_tiles_big_screen scrollTo" id="menu_dot1" href="#projets">Projets</a>
-            <a class="menu_tiles_big_screen scrollTo" id="menu_dot2" href="#cv-section">CV</a>
-            <a class="menu_tiles_big_screen scrollTo" id="menu_dot3" href="#contact-section">Contact</a>
+            <p id="portfolio-title">Benjamin Veisseyre</p>
+            <div>
+                <a class="menu_tiles_big_screen scrollTo" id="menu_dot1" href="#projets">Projets</a>
+            </div>
+            <div>
+                <a class="menu_tiles_big_screen scrollTo" id="menu_dot2" href="#cv-section">CV</a>
+            </div>
+            <div>
+                <a class="menu_tiles_big_screen scrollTo" id="menu_dot3" href="#contact-section">Contact</a>
+            </div>
         </nav>
     </header>
     <main>
-        <div id="welcome-section">
+        <div id="particles-js1" class="welcome-section">
             <div>
-                <p class="header1">PortFolio</p>
-                <p class="header2">Benjamin VEISSEYRE</p>
+                <p id="front-end-header" class="header1 neon-red" style="transition: 5s">FRONT-END</br>DEVELOPER</p>
             </div>
         </div>
-        <div id="projets">
+        <div id="particles-js2" class="welcome-section">
+            <div>
+                <p id="back-end-header" class="header1 neon-blue" style="transition: 5s">BACK-END</br>DEVELOPER</p>
+            </div>
+        </div>
+        <div id="projets" class="menu_background_scroll">
             <h1>Mes Projets</h1>
             <div id="projets-container">
                 <div id="projet1">
@@ -63,7 +78,7 @@
             <div id="contact-container">
                 <address>
                     <img src="./medias/mail_icon.png">
-                    <p>Mon mail : </p><a href="mailto:benvei@sfr.fr"> benvei@sfr.fr</a>
+                    <p>Mon mail : </p><a href="mailto:bveisseyre.315@gmail.com"> bveisseyre.315@gmail.com</a>
                 </address>
                 <div>
                     <img src="./medias/github_icon.png">
@@ -71,16 +86,22 @@
                 </div>
                 <div>
                     <img src="./medias/location_icon.png">
-                    <p>Montpellier</p>
+                    <p>Montpellier, France</p>
                 </div>
             </div>
         </div>
         <footer>
-            <p>Site Web programmé en HTML, CSS, et JavaScript.</p>
+            <p>Site Web programmé en HTML, CSS, et JavaScript. Utilisation de JQuery, Slick, et Particles.js. Utilisation des polices d'écriture "LemonMilk", "Malgun Gothic", "Iceland", et "CaviarDreams".</p>
         </footer>
     </main>
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/smooth_scroll.js"></script>
+    <script type="text/javascript" src="./js/menu_background.js"></script>
+    <script type="text/javascript" src="./js/particles/particles.min.js"></script>
+    <script type="text/javascript">
+        particlesJS.load('particles-js1', './js/particles/particles.json');
+        particlesJS.load('particles-js2', './js/particles/particles2.json');
+    </script>
 </body>
 
 </html>
