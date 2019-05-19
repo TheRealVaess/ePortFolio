@@ -4,17 +4,17 @@
 
 @font-face {
     font-family: CaviarDreams;
-    src: url(../fonts/CaviarDreams.ttf);
+    src: url(../../fonts/CaviarDreams.ttf);
 }
 
 @font-face {
     font-family: MalgunGothic;
-    src: url(../fonts/malgunsl.ttf);
+    src: url(../../fonts/malgunsl.ttf);
 }
 
 @font-face {
     font-family: LemonMilk;
-    src: url(../fonts/LemonMilklight.otf);
+    src: url(../../fonts/LemonMilklight.otf);
 }
 
 /*_______________________________________________________________*/
@@ -138,7 +138,7 @@ footer p {
     bottom: 0;
     z-index: 0;
     margin: auto;
-    
+
     display: block;
     width: 100%;
     height: 100%;
@@ -523,7 +523,7 @@ address a:hover {
     .header1 {
         font-size: 150px;
     }
-    
+
     .header2 {
         font-size: 35px;
     }
@@ -535,7 +535,7 @@ address a:hover {
     #welcome-section-projet div .header1 {
         font-size: 150px;
     }
-    
+
     #scrolldown {
         font-size: 50px;
     }
@@ -549,7 +549,7 @@ address a:hover {
     .header1 {
         font-size: 100px;
     }
-    
+
     .header2 {
         font-size: 25px;
     }
@@ -574,7 +574,7 @@ address a:hover {
     #welcome-section-projet div .header1 {
         font-size: 100px;
     }
-    
+
     #scrolldown {
         font-size: 40px;
     }
@@ -588,7 +588,7 @@ address a:hover {
     .header1 {
         font-size: 50px;
     }
-    
+
     .header2 {
         font-size: 18px;
     }
@@ -609,7 +609,7 @@ address a:hover {
     #welcome-section-projet div .header1 {
         font-size: 50px;
     }
-    
+
     #scrolldown {
         font-size: 30px;
     }
@@ -623,7 +623,7 @@ address a:hover {
     .header1 {
         font-size: 35px;
     }
-    
+
     .header2 {
         font-size: 15px;
     }
@@ -640,7 +640,7 @@ address a:hover {
     #welcome-section-projet div .header1 {
         font-size: 35px;
     }
-    
+
     #scrolldown {
         font-size: 20px;
     }

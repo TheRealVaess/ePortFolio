@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Mon e-portfolio</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav class="menu_big_screen">
+            <p id="portfolio-title">Benjamin Veisseyre</p>
+            <div>
+                <a class="menu_tiles_big_screen scrollTo" id="menu_dot1" href="#projets">Projets</a>
+            </div>
+            <div>
+                <a class="menu_tiles_big_screen scrollTo" id="menu_dot2" href="#cv-section">CV</a>
+            </div>
+            <div>
+                <a class="menu_tiles_big_screen scrollTo" id="menu_dot3" href="#contact-section">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="particles-js1" class="welcome-section">
+            <div>
+                <p id="front-end-header" class="header1 neon-red" style="transition: 5s">FRONT-END</br>DEVELOPER</p>
+            </div>
+        </div>
+        <div id="particles-js2" class="welcome-section">
+            <div>
+                <p id="back-end-header" class="header1 neon-blue" style="transition: 5s">BACK-END</br>DEVELOPER</p>
+            </div>
+        </div>
+        <div id="projets" class="menu_background_scroll">
+            <h1>Mes Projets</h1>
+            <div id="projets-container">
+                <div id="projet1">
+                    <a href="projet1-milkyway.html" id="projet1-link"></a>
+                </div>
+                <div id="projet2">
+                    <a href="projet2-LP.html" id="projet2-link"></a>
+                </div>
+                <div id="projet3">
+                    <a href="projet3-startgame.html" id="projet3-link"></a>
+                </div>
+                <div id="projet4">
+                    <a href="projet4-coffrecorp.html" id="projet4-link"></a>
+                </div>
+                <div id="projet5">
+                    <a href="projet5-RMI.html" id="projet5-link"></a>
+                </div>
+                <div id="projet6">
+                    <a href="projet6-machineasous.html" id="projet6-link"></a>
+                </div>
+                <div id="projet7">
+                    <a href="projet7-aksciomVitrine.html" id="projet7-link"></a>
+                </div>
+            </div>
+        </div>
+        <div id="cv-section">
+            <h1>Mon CV</h1>
+            <div id="cv-container">
+                <a href="pdf/CV-VEISSEYRE-Benjamin.pdf" id="cv-link" target="_blank">
+                    <img src="medias/pdf.png">
+                </a>
+            </div>
+        </div>
+        <div id="contact-section">
+            <h1>Me contacter</h1>
+            <div id="contact-container">
+                <address>
+                    <img src="medias/mail_icon.png">
+                    <p>Mon mail : </p><a href="mailto:bveisseyre.315@gmail.com"> bveisseyre.315@gmail.com</a>
+                </address>
+                <div>
+                    <img src="medias/github_icon.png">
+                    <a href="https://github.com/Veisseyre">github.com/Veisseyre</a>
+                </div>
+                <div>
+                    <img src="medias/location_icon.png">
+                    <p>Montpellier, France</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Site Web programmé en HTML, CSS, et JavaScript. Utilisation de JQuery, Slick, et Particles.js. Utilisation des polices d'écriture "LemonMilk", "Malgun Gothic", "Iceland", et "CaviarDreams".</p>
+        </footer>
+    </main>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/smooth_scroll.js"></script>
+    <script type="text/javascript" src="js/menu_background.js"></script>
+    <script type="text/javascript" src="js/particles/particles.min.js"></script>
+    <script type="text/javascript">
+        particlesJS.load('particles-js1', './js/particles/particles.json');
+        particlesJS.load('particles-js2', './js/particles/particles2.json');
+    </script>
+</body>
+
+</html>
