@@ -3,89 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b8cd0164-c44e-4b69-967b-657ef73f7c6c" name="Default Changelist" comment="Changement complet du design&#10;Ajout d'une police d'écriture&#10;Division du style.css en plusieurs fichiers CSS&#10;Ajout de scripts JS&#10;Utilisation de Particles.js&#10;Mise à jour du CV">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/css/fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mediaqueries.css" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/css/mediaqueries.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/old_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/css/old_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/css/scrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-3.3.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/menu_background.js" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/js/menu_background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/particles/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/js/particles/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/particles/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/js/particles/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/particles/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/js/particles/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/particles/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/js/particles/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/particles/particles.js" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/js/particles/particles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/particles/particles.json" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/js/particles/particles.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/particles/particles.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/js/particles/particles.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/particles/particles2.json" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/js/particles/particles2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/slideshow.js" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/js/slideshow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/smooth_scroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/js/smooth_scroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/github_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/github_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/location_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/location_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/mail_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/mail_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/pdf.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/pdf.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet1-milkyway/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet1-milkyway/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet1-milkyway/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet1-milkyway/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet1-milkyway/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet1-milkyway/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet2-LP/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet2-LP/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet2-LP/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet2-LP/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet2-LP/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet2-LP/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet3-startgame/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet3-startgame/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet3-startgame/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet3-startgame/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet3-startgame/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet3-startgame/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet3-startgame/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet3-startgame/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet4-coffrecorp/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet4-coffrecorp/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet4-coffrecorp/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet4-coffrecorp/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet4-coffrecorp/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet4-coffrecorp/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet4-coffrecorp/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet4-coffrecorp/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet5-RMI/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet5-RMI/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet5-RMI/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet5-RMI/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet5-RMI/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet5-RMI/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet5-RMI/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet5-RMI/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet5-RMI/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet5-RMI/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet5-RMI/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet5-RMI/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet5-RMI/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet5-RMI/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet6-machineasous/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet6-machineasous/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet6-machineasous/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet6-machineasous/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet7-aksciomVitrine/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet7-aksciomVitrine/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet7-aksciomVitrine/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet7-aksciomVitrine/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet7-aksciomVitrine/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet7-aksciomVitrine/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet7-aksciomVitrine/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet7-aksciomVitrine/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet7-aksciomVitrine/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet7-aksciomVitrine/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet7-aksciomVitrine/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet7-aksciomVitrine/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet7-aksciomVitrine/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet7-aksciomVitrine/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medias/projet7-aksciomVitrine/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/medias/projet7-aksciomVitrine/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdf/CV-VEISSEYRE-Benjamin.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/pdf/CV-VEISSEYRE-Benjamin.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet1-milkyway.html" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/projet1-milkyway.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet2-LP.html" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/projet2-LP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet3-startgame.html" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/projet3-startgame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet4-coffrecorp.html" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/projet4-coffrecorp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet5-RMI.html" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/projet5-RMI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet6-machineasous.html" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/projet6-machineasous.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet7-aksciomVitrine.html" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/projet7-aksciomVitrine.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/ajax-loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/ajax-loader.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/config.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.eot" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/fonts/slick.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.svg" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/fonts/slick.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/fonts/slick.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/fonts/slick.woff" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/fonts/slick.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/slick-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick-theme.less" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/slick-theme.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick-theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/slick-theme.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/slick.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.js" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/slick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.less" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/slick.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/slick.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slick/slick.scss" beforeDir="false" afterPath="$PROJECT_DIR$/oldFiles/slick/slick.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainMenu.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="408">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -107,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/MainMenu.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            <state relative-caret-position="398">
+              <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -181,6 +100,22 @@
             <path>
               <item name="ePortFolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="ePortFolio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ePortFolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ePortFolio" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ePortFolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ePortFolio" type="462c0819:PsiDirectoryNode" />
+              <item name="oldFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ePortFolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ePortFolio" type="462c0819:PsiDirectoryNode" />
+              <item name="oldFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ePortFolio" type="b2602c69:ProjectViewProjectNode" />
@@ -275,7 +210,8 @@
       <workItem from="1542583174392" duration="893000" />
       <workItem from="1542811645336" duration="2401000" />
       <workItem from="1543405286143" duration="74000" />
-      <workItem from="1558260715545" duration="6861000" />
+      <workItem from="1558260715545" duration="6920000" />
+      <workItem from="1558297860818" duration="1586000" />
     </task>
     <task id="LOCAL-00001" summary="Changement complet du design&#10;Ajout d'une police d'écriture&#10;Division du style.css en plusieurs fichiers CSS&#10;Ajout de scripts JS&#10;Utilisation de Particles.js&#10;Mise à jour du CV">
       <created>1540657428687</created>
@@ -288,7 +224,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62080000" />
+    <option name="totallyTimeSpent" value="63725000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -303,7 +239,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13856691" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13856691" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -316,7 +252,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24749164" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24749164" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
       <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -362,13 +298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oldFiles/css/fonts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/oldFiles/projet1-milkyway.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="789">
@@ -408,13 +337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="50" column="151" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="50" selection-end-column="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oldFiles/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10128">
-          <caret line="422" selection-start-line="422" selection-end-line="422" />
         </state>
       </provider>
     </entry>
@@ -502,17 +424,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldFiles/css/fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldFiles/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="83" selection-start-line="83" selection-end-line="93" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="408">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/MainMenu.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="398">
+          <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
         </state>
       </provider>
     </entry>
