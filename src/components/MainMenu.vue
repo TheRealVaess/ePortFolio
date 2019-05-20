@@ -1,10 +1,10 @@
 <template>
   <div class="main-menu">
     <ul class="menu-container">
-      <li>Test1</li>
-      <li>Test2</li>
-      <li>Test3</li>
-      <li>Test4</li>
+      <li :class="{'test1': test}" @click="test = true">Test1</li>
+      <li :class="{'test2': test}">Test2</li>
+      <li :class="{'test3': test}">Test3</li>
+      <li :class="{'test4': test}">Test4</li>
     </ul>
   </div>
 </template>
@@ -14,7 +14,7 @@ export default {
   name: 'MainMenu',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      test: false
     }
   }
 }
@@ -46,6 +46,27 @@ export default {
       margin: 0 4%;
       transition: 0.5s;
       background-color: white;
+    }
+
+    li.test1, li.test1:hover {
+      transform: translateX(-5000px);
+      transition: 3s;
+      transition-delay: 0s;
+    }
+    li.test2, li.test2:hover {
+      transform: translateX(-5000px);
+      transition: 3s;
+      transition-delay: 0.2s;
+    }
+    li.test3, li.test3:hover {
+      transform: translateX(-5000px);
+      transition: 3s;
+      transition-delay: 0.4s;
+    }
+    li.test4, li.test4:hover {
+      transform: translateX(-5000px);
+      transition: 3s;
+      transition-delay: 0.6s;
     }
 
     li:hover {

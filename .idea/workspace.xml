@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b8cd0164-c44e-4b69-967b-657ef73f7c6c" name="Default Changelist" comment="Changement complet du design&#10;Ajout d'une police d'écriture&#10;Division du style.css en plusieurs fichiers CSS&#10;Ajout de scripts JS&#10;Utilisation de Particles.js&#10;Mise à jour du CV">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainMenu.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/MainMenu.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+            <state relative-caret-position="302">
+              <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -211,7 +210,8 @@
       <workItem from="1542811645336" duration="2401000" />
       <workItem from="1543405286143" duration="74000" />
       <workItem from="1558260715545" duration="6920000" />
-      <workItem from="1558297860818" duration="1586000" />
+      <workItem from="1558297860818" duration="1719000" />
+      <workItem from="1558384370055" duration="1086000" />
     </task>
     <task id="LOCAL-00001" summary="Changement complet du design&#10;Ajout d'une police d'écriture&#10;Division du style.css en plusieurs fichiers CSS&#10;Ajout de scripts JS&#10;Utilisation de Particles.js&#10;Mise à jour du CV">
       <created>1540657428687</created>
@@ -224,7 +224,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63725000" />
+    <option name="totallyTimeSpent" value="64944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -239,7 +239,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13856691" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13856691" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -252,7 +252,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24749164" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24749164" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
       <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -452,8 +452,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/MainMenu.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+        <state relative-caret-position="302">
+          <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
         </state>
       </provider>
     </entry>
