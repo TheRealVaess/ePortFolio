@@ -1,10 +1,9 @@
 <template>
-  <div class="main-menu">
+  <div class="main-menu" :class="{'test4': test}">
     <ul class="menu-container">
       <li :class="{'test1': test}" @click="test = true">Test1</li>
       <li :class="{'test2': test}">Test2</li>
       <li :class="{'test3': test}">Test3</li>
-      <li :class="{'test4': test}">Test4</li>
     </ul>
   </div>
 </template>
@@ -25,12 +24,21 @@ export default {
   .main-menu {
     height: 100vh;
     width: 100%;
+    transition: 1s;
+    background: black;
+  }
+
+  .main-menu.test4 {
+    width: 5%;
+    transition: 1s;
+    transition-delay: 0.8s;
   }
 
   .menu-container {
-    height: 100%;
+    height: 60%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     overflow: hidden;
 
@@ -38,90 +46,85 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
-      width: 6%;
-      transform: skew(10deg, 0deg);
-      writing-mode: vertical-rl;
-      text-orientation: upright;
+      height: 15%;
+      width: 100%;
       margin: 0 4%;
       transition: 0.5s;
-      background-color: white;
     }
 
     li.test1, li.test1:hover {
-      transform: translateX(-5000px);
-      transition: 3s;
-      transition-delay: 0s;
+      animation-name: anim_menu_tile;
+      animation-duration: 4s;
+      animation-delay: 0s;
+      transform: none;
     }
     li.test2, li.test2:hover {
-      transform: translateX(-5000px);
-      transition: 3s;
-      transition-delay: 0.2s;
+      animation-name: anim_menu_tile;
+      animation-duration: 4s;
+      animation-delay: 0.2s;
+      transform: none;
     }
     li.test3, li.test3:hover {
-      transform: translateX(-5000px);
-      transition: 3s;
-      transition-delay: 0.4s;
+      animation-name: anim_menu_tile;
+      animation-duration: 4s;
+      animation-delay: 0.4s;
+      transform: none;
     }
-    li.test4, li.test4:hover {
-      transform: translateX(-5000px);
-      transition: 3s;
-      transition-delay: 0.6s;
+
+    @keyframes anim_menu_tile {
+      0%   {transform: translateX(0px);}
+      40%  {transform: translateX(-5000px);}
+      50% {transform: translateX(0px);}
+      100% {transform: translateX(0px);}
     }
 
     li:hover {
-      transform: skew(10deg, 0deg) scale(1.5);
-      z-index: 10;
-      transition: 0.3s;
+      transform: scale(1.2);
+      transition: 0.2s;
     }
 
     li:nth-child(1) {
-      -webkit-animation: neon-red 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon-red 1.5s ease-in-out infinite alternate;
-      animation: neon-red 1.5s ease-in-out infinite alternate;
+      background: rgba(122,129,255,1);
+      background: -moz-linear-gradient(top, rgba(122,129,255,1) 0%, rgba(133,135,255,1) 28%, rgba(163,168,255,1) 46%, rgba(235,242,255,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(122,129,255,1)), color-stop(28%, rgba(133,135,255,1)), color-stop(46%, rgba(163,168,255,1)), color-stop(100%, rgba(235,242,255,1)));
+      background: -webkit-linear-gradient(top, rgba(122,129,255,1) 0%, rgba(133,135,255,1) 28%, rgba(163,168,255,1) 46%, rgba(235,242,255,1) 100%);
+      background: -o-linear-gradient(top, rgba(122,129,255,1) 0%, rgba(133,135,255,1) 28%, rgba(163,168,255,1) 46%, rgba(235,242,255,1) 100%);
+      background: -ms-linear-gradient(top, rgba(122,129,255,1) 0%, rgba(133,135,255,1) 28%, rgba(163,168,255,1) 46%, rgba(235,242,255,1) 100%);
+      background: linear-gradient(to bottom, rgba(122,129,255,1) 0%, rgba(133,135,255,1) 28%, rgba(163,168,255,1) 46%, rgba(235,242,255,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a81ff', endColorstr='#ebf2ff', GradientType=0 );
     }
 
     li:nth-child(2) {
-      -webkit-animation: neon-blue 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon-blue 1.5s ease-in-out infinite alternate;
-      animation: neon-blue 1.5s ease-in-out infinite alternate;
+      background: rgba(255,122,125,1);
+      background: -moz-linear-gradient(top, rgba(255,122,125,1) 0%, rgba(255,135,133,1) 28%, rgba(255,163,165,1) 46%, rgba(255,235,241,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,122,125,1)), color-stop(28%, rgba(255,135,133,1)), color-stop(46%, rgba(255,163,165,1)), color-stop(100%, rgba(255,235,241,1)));
+      background: -webkit-linear-gradient(top, rgba(255,122,125,1) 0%, rgba(255,135,133,1) 28%, rgba(255,163,165,1) 46%, rgba(255,235,241,1) 100%);
+      background: -o-linear-gradient(top, rgba(255,122,125,1) 0%, rgba(255,135,133,1) 28%, rgba(255,163,165,1) 46%, rgba(255,235,241,1) 100%);
+      background: -ms-linear-gradient(top, rgba(255,122,125,1) 0%, rgba(255,135,133,1) 28%, rgba(255,163,165,1) 46%, rgba(255,235,241,1) 100%);
+      background: linear-gradient(to bottom, rgba(255,122,125,1) 0%, rgba(255,135,133,1) 28%, rgba(255,163,165,1) 46%, rgba(255,235,241,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7a7d', endColorstr='#ffebf1', GradientType=0 );
     }
 
     li:nth-child(3) {
-      -webkit-animation: neon-green 1.5s ease-in-out infinite alternate;
-      -moz-animation: neon-green 1.5s ease-in-out infinite alternate;
-      animation: neon-green 1.5s ease-in-out infinite alternate;
+      background: rgba(255,169,122,1);
+      background: -moz-linear-gradient(top, rgba(255,169,122,1) 0%, rgba(255,180,133,1) 28%, rgba(255,195,163,1) 46%, rgba(255,236,235,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,169,122,1)), color-stop(28%, rgba(255,180,133,1)), color-stop(46%, rgba(255,195,163,1)), color-stop(100%, rgba(255,236,235,1)));
+      background: -webkit-linear-gradient(top, rgba(255,169,122,1) 0%, rgba(255,180,133,1) 28%, rgba(255,195,163,1) 46%, rgba(255,236,235,1) 100%);
+      background: -o-linear-gradient(top, rgba(255,169,122,1) 0%, rgba(255,180,133,1) 28%, rgba(255,195,163,1) 46%, rgba(255,236,235,1) 100%);
+      background: -ms-linear-gradient(top, rgba(255,169,122,1) 0%, rgba(255,180,133,1) 28%, rgba(255,195,163,1) 46%, rgba(255,236,235,1) 100%);
+      background: linear-gradient(to bottom, rgba(255,169,122,1) 0%, rgba(255,180,133,1) 28%, rgba(255,195,163,1) 46%, rgba(255,236,235,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa97a', endColorstr='#ffeceb', GradientType=0 );
     }
 
     li:nth-child(4) {
-      background-color: yellow;
-    }
-  }
-
-  @-webkit-keyframes neon-red {
-    from {
-      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
-    }
-    to {
-      box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px red;
-    }
-  }
-
-  @-webkit-keyframes neon-blue {
-    from {
-      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px cyan, 0 0 50px cyan, 0 0 60px cyan, 0 0 70px cyan, 0 0 80px cyan;
-    }
-    to {
-      box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px cyan, 0 0 35px cyan, 0 0 40px cyan, 0 0 50px cyan, 0 0 75px cyan;
-    }
-  }
-
-  @-webkit-keyframes neon-green {
-    from {
-      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green, 0 0 80px green;
-    }
-    to {
-      box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px green, 0 0 35px green, 0 0 40px green, 0 0 50px green, 0 0 75px green;
+      background: rgba(255,204,122,1);
+      background: -moz-linear-gradient(top, rgba(255,204,122,1) 0%, rgba(255,212,133,1) 28%, rgba(255,220,163,1) 46%, rgba(255,241,235,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,204,122,1)), color-stop(28%, rgba(255,212,133,1)), color-stop(46%, rgba(255,220,163,1)), color-stop(100%, rgba(255,241,235,1)));
+      background: -webkit-linear-gradient(top, rgba(255,204,122,1) 0%, rgba(255,212,133,1) 28%, rgba(255,220,163,1) 46%, rgba(255,241,235,1) 100%);
+      background: -o-linear-gradient(top, rgba(255,204,122,1) 0%, rgba(255,212,133,1) 28%, rgba(255,220,163,1) 46%, rgba(255,241,235,1) 100%);
+      background: -ms-linear-gradient(top, rgba(255,204,122,1) 0%, rgba(255,212,133,1) 28%, rgba(255,220,163,1) 46%, rgba(255,241,235,1) 100%);
+      background: linear-gradient(to bottom, rgba(255,204,122,1) 0%, rgba(255,212,133,1) 28%, rgba(255,220,163,1) 46%, rgba(255,241,235,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc7a', endColorstr='#fff1eb', GradientType=0 );
     }
   }
 </style>
