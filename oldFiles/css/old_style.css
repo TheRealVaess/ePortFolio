@@ -4,17 +4,17 @@
 
 @font-face {
     font-family: CaviarDreams;
-    src: url(../../fonts/CaviarDreams.ttf);
+    src: url(../../src/assets/fonts/CaviarDreams.ttf);
 }
 
 @font-face {
     font-family: MalgunGothic;
-    src: url(../../fonts/malgunsl.ttf);
+    src: url(../../src/assets/fonts/malgunsl.ttf);
 }
 
 @font-face {
     font-family: LemonMilk;
-    src: url(../../fonts/LemonMilklight.otf);
+    src: url(../../src/assets/fonts/LemonMilklight.otf);
 }
 
 /*_______________________________________________________________*/

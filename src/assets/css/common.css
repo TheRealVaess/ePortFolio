@@ -1,0 +1,23 @@
+@font-face {
+  font-family: CaviarDreams;
+  src: url(../fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+  font-family: MalgunGothic;
+  src: url(../fonts/malgunsl.ttf);
+}
+
+@font-face {
+  font-family: LemonMilk;
+  src: url(../fonts/LemonMilklight.otf);
+}
+
+@font-face {
+  font-family: Iceland;
+  src: url(../fonts/Iceland-Regular.ttf);
+}
+
+a {
+  text-decoration: none;
+}

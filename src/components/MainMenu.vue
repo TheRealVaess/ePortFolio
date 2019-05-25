@@ -1,10 +1,36 @@
 <template>
-  <div class="main-menu" :class="{'test4': test}">
+  <div class="main-menu" :class="{'menu-anim': tabSelected}">
     <ul class="menu-container">
-      <li :class="{'test1': test}" @click="test = true">Test1</li>
-      <li :class="{'test2': test}">Test2</li>
-      <li :class="{'test3': test}">Test3</li>
+      <li :class="{'menu-tab1': tabSelected}" @click="tabSelected = true">
+        <router-link to="/projects">
+          <h2 v-if="!tabSelected">Projets</h2>
+          <font-awesome-icon class="menu-tab-icon" :class="{'disabled': !tabSelected}" icon="laptop-code"/>
+        </router-link>
+      </li>
+      <li :class="{'menu-tab2': tabSelected}" @click="tabSelected = true">
+        <router-link to="resume">
+          <h2 v-if="!tabSelected">CV</h2>
+          <font-awesome-icon class="menu-tab-icon" :class="{'disabled': !tabSelected}" icon="address-card"/>
+        </router-link>
+      </li>
+      <li :class="{'menu-tab3': tabSelected}" @click="tabSelected = true">
+        <router-link to="contact">
+          <h2 v-if="!tabSelected">Contact</h2>
+          <font-awesome-icon class="menu-tab-icon" :class="{'disabled': !tabSelected}" icon="pencil-alt"/>
+          <!--
+
+          REMPLACER PAR LE FONT AWESOME DE BASE
+
+          -->
+        </router-link>
+      </li>
     </ul>
+    <h1 class="main-title" :class="{'main-title-anim': tabSelected}">
+      Benjamin {<img :src="require('@/assets/icons/title-anim.svg')"/>} Veisseyre
+    </h1>
+    <h1 class="main-title-alt" :class="{'disabled': !tabSelected}">
+      BV
+    </h1>
   </div>
 </template>
 
@@ -13,22 +39,21 @@ export default {
   name: 'MainMenu',
   data () {
     return {
-      test: false
+      tabSelected: false
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   .main-menu {
     height: 100vh;
     width: 100%;
     transition: 1s;
-    background: black;
+    background: rgb(30, 30, 30);
   }
 
-  .main-menu.test4 {
+  .main-menu.menu-anim {
     width: 5%;
     transition: 1s;
     transition-delay: 0.8s;
@@ -43,28 +68,44 @@ export default {
     overflow: hidden;
 
     li {
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
+      background-color: black;
       height: 15%;
       width: 100%;
       margin: 0 4%;
-      transition: 0.5s;
+
+      h2 {
+        color: white;
+        z-index: 5;
+        font-family: LemonMilk, sans-serif;
+        font-size: 2rem;
+      }
+
+      a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
-    li.test1, li.test1:hover {
+    li.menu-tab1, li.menu-tab1:hover {
       animation-name: anim_menu_tile;
       animation-duration: 4s;
       animation-delay: 0s;
       transform: none;
     }
-    li.test2, li.test2:hover {
+    li.menu-tab2, li.menu-tab2:hover {
       animation-name: anim_menu_tile;
       animation-duration: 4s;
       animation-delay: 0.2s;
       transform: none;
     }
-    li.test3, li.test3:hover {
+    li.menu-tab3, li.menu-tab3:hover {
       animation-name: anim_menu_tile;
       animation-duration: 4s;
       animation-delay: 0.4s;
@@ -78,53 +119,80 @@ export default {
       100% {transform: translateX(0px);}
     }
 
-    li:hover {
-      transform: scale(1.2);
-      transition: 0.2s;
+    a::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: red;
+      transform: scaleX(0);
+      transition: 0.5s;
     }
 
-    li:nth-child(1) {
-      background: rgba(122,129,255,1);
-      background: -moz-linear-gradient(top, rgba(122,129,255,1) 0%, rgba(133,135,255,1) 28%, rgba(163,168,255,1) 46%, rgba(235,242,255,1) 100%);
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(122,129,255,1)), color-stop(28%, rgba(133,135,255,1)), color-stop(46%, rgba(163,168,255,1)), color-stop(100%, rgba(235,242,255,1)));
-      background: -webkit-linear-gradient(top, rgba(122,129,255,1) 0%, rgba(133,135,255,1) 28%, rgba(163,168,255,1) 46%, rgba(235,242,255,1) 100%);
-      background: -o-linear-gradient(top, rgba(122,129,255,1) 0%, rgba(133,135,255,1) 28%, rgba(163,168,255,1) 46%, rgba(235,242,255,1) 100%);
-      background: -ms-linear-gradient(top, rgba(122,129,255,1) 0%, rgba(133,135,255,1) 28%, rgba(163,168,255,1) 46%, rgba(235,242,255,1) 100%);
-      background: linear-gradient(to bottom, rgba(122,129,255,1) 0%, rgba(133,135,255,1) 28%, rgba(163,168,255,1) 46%, rgba(235,242,255,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a81ff', endColorstr='#ebf2ff', GradientType=0 );
+    a:hover::after {
+      transform: scaleX(1);
+      transition: 0.5s;
     }
+  }
 
-    li:nth-child(2) {
-      background: rgba(255,122,125,1);
-      background: -moz-linear-gradient(top, rgba(255,122,125,1) 0%, rgba(255,135,133,1) 28%, rgba(255,163,165,1) 46%, rgba(255,235,241,1) 100%);
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,122,125,1)), color-stop(28%, rgba(255,135,133,1)), color-stop(46%, rgba(255,163,165,1)), color-stop(100%, rgba(255,235,241,1)));
-      background: -webkit-linear-gradient(top, rgba(255,122,125,1) 0%, rgba(255,135,133,1) 28%, rgba(255,163,165,1) 46%, rgba(255,235,241,1) 100%);
-      background: -o-linear-gradient(top, rgba(255,122,125,1) 0%, rgba(255,135,133,1) 28%, rgba(255,163,165,1) 46%, rgba(255,235,241,1) 100%);
-      background: -ms-linear-gradient(top, rgba(255,122,125,1) 0%, rgba(255,135,133,1) 28%, rgba(255,163,165,1) 46%, rgba(255,235,241,1) 100%);
-      background: linear-gradient(to bottom, rgba(255,122,125,1) 0%, rgba(255,135,133,1) 28%, rgba(255,163,165,1) 46%, rgba(255,235,241,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7a7d', endColorstr='#ffebf1', GradientType=0 );
-    }
+  h1.main-title {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: Iceland, sans-serif;
 
-    li:nth-child(3) {
-      background: rgba(255,169,122,1);
-      background: -moz-linear-gradient(top, rgba(255,169,122,1) 0%, rgba(255,180,133,1) 28%, rgba(255,195,163,1) 46%, rgba(255,236,235,1) 100%);
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,169,122,1)), color-stop(28%, rgba(255,180,133,1)), color-stop(46%, rgba(255,195,163,1)), color-stop(100%, rgba(255,236,235,1)));
-      background: -webkit-linear-gradient(top, rgba(255,169,122,1) 0%, rgba(255,180,133,1) 28%, rgba(255,195,163,1) 46%, rgba(255,236,235,1) 100%);
-      background: -o-linear-gradient(top, rgba(255,169,122,1) 0%, rgba(255,180,133,1) 28%, rgba(255,195,163,1) 46%, rgba(255,236,235,1) 100%);
-      background: -ms-linear-gradient(top, rgba(255,169,122,1) 0%, rgba(255,180,133,1) 28%, rgba(255,195,163,1) 46%, rgba(255,236,235,1) 100%);
-      background: linear-gradient(to bottom, rgba(255,169,122,1) 0%, rgba(255,180,133,1) 28%, rgba(255,195,163,1) 46%, rgba(255,236,235,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa97a', endColorstr='#ffeceb', GradientType=0 );
+    img {
+      width: 10%;
+      transition-duration: 0.5s;
+      transition-delay: 0.5s;
     }
+  }
+  h1.main-title.main-title-anim {
+    height: 0;
+    font-size: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
 
-    li:nth-child(4) {
-      background: rgba(255,204,122,1);
-      background: -moz-linear-gradient(top, rgba(255,204,122,1) 0%, rgba(255,212,133,1) 28%, rgba(255,220,163,1) 46%, rgba(255,241,235,1) 100%);
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,204,122,1)), color-stop(28%, rgba(255,212,133,1)), color-stop(46%, rgba(255,220,163,1)), color-stop(100%, rgba(255,241,235,1)));
-      background: -webkit-linear-gradient(top, rgba(255,204,122,1) 0%, rgba(255,212,133,1) 28%, rgba(255,220,163,1) 46%, rgba(255,241,235,1) 100%);
-      background: -o-linear-gradient(top, rgba(255,204,122,1) 0%, rgba(255,212,133,1) 28%, rgba(255,220,163,1) 46%, rgba(255,241,235,1) 100%);
-      background: -ms-linear-gradient(top, rgba(255,204,122,1) 0%, rgba(255,212,133,1) 28%, rgba(255,220,163,1) 46%, rgba(255,241,235,1) 100%);
-      background: linear-gradient(to bottom, rgba(255,204,122,1) 0%, rgba(255,212,133,1) 28%, rgba(255,220,163,1) 46%, rgba(255,241,235,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc7a', endColorstr='#fff1eb', GradientType=0 );
+    img {
+      width: 0;
+      transition-duration: 0.5s;
+      transition-delay: 0.5s;
     }
+  }
+
+  h1.main-title-alt {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: LemonMilk, sans-serif;
+    transition-duration: 0.5s;
+    transition-delay: 1.5s;
+    overflow: hidden;
+  }
+
+  h1.main-title-alt.disabled {
+    height: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+  }
+
+  .menu-tab-icon.disabled {
+    height: 0;
+    width: 0;
+    font-size: 0;
+    transition: 0.5s;
+    transition-delay: 1s;
+  }
+  .menu-tab-icon {
+    overflow: hidden;
+    color: white;
+    z-index: 5;
+    font-size: 2rem;
+    transition: 0.5s;
+    transition-delay: 1s;
   }
 </style>
