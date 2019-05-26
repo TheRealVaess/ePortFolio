@@ -50,6 +50,7 @@ export default {
     width: 100%;
     transition: 1s;
     background: rgb(30, 30, 30);
+    z-index: 10;
   }
 
   .main-menu.menu-anim {
@@ -78,7 +79,7 @@ export default {
 
       h2 {
         color: white;
-        z-index: 5;
+        z-index: 11;
         font-family: LemonMilk, sans-serif;
         font-size: 2rem;
       }
@@ -199,7 +200,7 @@ export default {
   }
   .menu-tab-icon {
     color: white;
-    z-index: 5;
+    z-index: 11;
     font-size: 2rem;
     transition: 0.5s;
     transition-delay: 1s;
