@@ -17,20 +17,18 @@
         <router-link to="contact">
           <h2 v-if="!tabSelected">Contact</h2>
           <font-awesome-icon class="menu-tab-icon" :class="{'disabled': !tabSelected}" icon="pencil-alt"/>
-          <!--
-
-          REMPLACER PAR LE FONT AWESOME DE BASE
-
-          -->
         </router-link>
       </li>
     </ul>
     <h1 class="main-title" :class="{'main-title-anim': tabSelected}">
       Benjamin {<img :src="require('@/assets/icons/title-anim.svg')"/>} Veisseyre
     </h1>
-    <h1 class="main-title-alt" :class="{'disabled': !tabSelected}">
-      BV
-    </h1>
+    <div class="main-title-alt" :class="{'disabled': !tabSelected}">
+      <h1>
+        BV
+      </h1>
+
+    </div>
   </div>
 </template>
 
@@ -47,6 +45,7 @@ export default {
 
 <style lang="scss" scoped>
   .main-menu {
+    position: absolute;
     height: 100vh;
     width: 100%;
     transition: 1s;
@@ -90,6 +89,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
       }
     }
 
@@ -162,7 +162,7 @@ export default {
     }
   }
 
-  h1.main-title-alt {
+  .main-title-alt {
     height: 40%;
     display: flex;
     justify-content: center;
@@ -172,9 +172,19 @@ export default {
     transition-duration: 0.5s;
     transition-delay: 1.5s;
     overflow: hidden;
+    color: white;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 20px 0;
+      background-color: black;
+    }
   }
 
-  h1.main-title-alt.disabled {
+  .main-title-alt.disabled {
     height: 0;
     transition-duration: 0.5s;
     transition-delay: 0.5s;
@@ -188,7 +198,6 @@ export default {
     transition-delay: 1s;
   }
   .menu-tab-icon {
-    overflow: hidden;
     color: white;
     z-index: 5;
     font-size: 2rem;

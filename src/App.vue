@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <MainMenu/>
-    <router-view/>
+    <router-view class="main-margin"/>
   </div>
 </template>
 
@@ -20,13 +20,16 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgba(255,124,216,1);
-  background: -moz-linear-gradient(top, rgba(255,124,216,1) 0%, rgba(253,137,215,1) 28%, rgba(251,166,225,1) 46%, rgba(252,236,252,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,124,216,1)), color-stop(28%, rgba(253,137,215,1)), color-stop(46%, rgba(251,166,225,1)), color-stop(100%, rgba(252,236,252,1)));
-  background: -webkit-linear-gradient(top, rgba(255,124,216,1) 0%, rgba(253,137,215,1) 28%, rgba(251,166,225,1) 46%, rgba(252,236,252,1) 100%);
-  background: -o-linear-gradient(top, rgba(255,124,216,1) 0%, rgba(253,137,215,1) 28%, rgba(251,166,225,1) 46%, rgba(252,236,252,1) 100%);
-  background: -ms-linear-gradient(top, rgba(255,124,216,1) 0%, rgba(253,137,215,1) 28%, rgba(251,166,225,1) 46%, rgba(252,236,252,1) 100%);
-  background: linear-gradient(to bottom, rgba(255,124,216,1) 0%, rgba(253,137,215,1) 28%, rgba(251,166,225,1) 46%, rgba(252,236,252,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7cd8', endColorstr='#fcecfc', GradientType=0 );
+  background: rgb(255,155,248);
+  background: -moz-linear-gradient(180deg, rgba(255,155,248,1) 0%, rgba(133,62,255,1) 50%, rgba(1,207,255,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255,155,248,1) 0%, rgba(133,62,255,1) 50%, rgba(1,207,255,1) 100%);
+  background: linear-gradient(180deg, rgba(255,155,248,1) 0%, rgba(133,62,255,1) 50%, rgba(1,207,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff9bf8",endColorstr="#01cfff",GradientType=1);
+  position: relative;
+  min-height: 100vh;
+}
+
+.main-margin {
+  margin-left: 5%;
 }
 </style>
