@@ -14,6 +14,19 @@ export default {
   data () {
     return {
       projectData: [
+        {text: 'TEST', url: require('@/assets/img/1.png')},
+        {text: 'TEST', url: require('@/assets/img/1.png')},
+        {text: 'TEST', url: require('@/assets/img/1.png')},
+        {text: 'TEST', url: require('@/assets/img/1.png')},
+        {text: 'TEST', url: require('@/assets/img/1.png')},
+        {text: 'TEST', url: require('@/assets/img/1.png')},
+        {text: 'TEST', url: require('@/assets/img/1.png')},
+        {text: 'TEST', url: require('@/assets/img/1.png')},
+        {text: 'TEST', url: require('@/assets/img/1.png')},
+        {text: 'TEST', url: require('@/assets/img/1.png')},
+        {text: 'TEST', url: require('@/assets/img/1.png')},
+        {text: 'TEST', url: require('@/assets/img/1.png')},
+        {text: 'TEST', url: require('@/assets/img/1.png')},
         {text: 'TEST', url: require('@/assets/img/1.png')}
       ]
     }
@@ -23,6 +36,8 @@ export default {
 
 <style scoped>
   .projects {
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 </style>

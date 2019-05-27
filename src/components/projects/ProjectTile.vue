@@ -1,5 +1,6 @@
 <template>
   <div class="project-tile"
+       ref="project-tile"
        @mouseenter="hovering = true"
        @mouseleave="hovering = false"
        :style="'background-image: url(' + imgUrl + ')'">
@@ -29,7 +30,8 @@ export default {
 .project-tile {
   position: relative;
   height: 200px;
-  width: 200px;
+  width: 15%;
+  margin: 15px;
   border-radius: 3px;
   background-color: white;
   background-size: contain;

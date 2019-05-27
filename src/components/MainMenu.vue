@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss" scoped>
   .main-menu {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100%;
     transition: 1s;
