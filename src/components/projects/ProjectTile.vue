@@ -22,6 +22,9 @@ export default {
     return {
       hovering: false
     }
+  },
+  mounted () {
+    this.$refs['project-tile'].style.height = this.$refs['project-tile'].clientWidth + 'px'
   }
 }
 </script>
@@ -29,8 +32,7 @@ export default {
 <style lang="scss" scoped>
 .project-tile {
   position: relative;
-  height: 200px;
-  width: 15%;
+  width: 20%;
   margin: 15px;
   border-radius: 3px;
   background-color: white;
@@ -47,9 +49,12 @@ export default {
     bottom: 0;
     height: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
     overflow: hidden;
     transition-duration: 0.5s;
+    text-align: center;
+    font-family: CaviarDreams, sans-serif;
+    font-size: 1.4rem;
   }
 
   .project-tile-text.hovered {
