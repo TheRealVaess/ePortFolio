@@ -2,19 +2,19 @@
   <div class="main-menu" :class="{'menu-anim': tabSelected}">
     <ul class="menu-container">
       <li :class="{'menu-tab1': tabSelected}" @click="tabSelected = true">
-        <router-link to="/projects">
+        <router-link class="project-tab" to="/projects">
           <h2 v-if="!tabSelected">Projets</h2>
           <font-awesome-icon class="menu-tab-icon" :class="{'disabled': !tabSelected}" icon="laptop-code"/>
         </router-link>
       </li>
       <li :class="{'menu-tab2': tabSelected}" @click="tabSelected = true">
-        <router-link to="resume">
+        <router-link class="resume-tab" to="resume">
           <h2 v-if="!tabSelected">CV</h2>
           <font-awesome-icon class="menu-tab-icon" :class="{'disabled': !tabSelected}" icon="address-card"/>
         </router-link>
       </li>
       <li :class="{'menu-tab3': tabSelected}" @click="tabSelected = true">
-        <router-link to="contact">
+        <router-link class="contact-tab" to="contact">
           <h2 v-if="!tabSelected">Contact</h2>
           <font-awesome-icon class="menu-tab-icon" :class="{'disabled': !tabSelected}" icon="pencil-alt"/>
         </router-link>
@@ -37,7 +37,7 @@ export default {
   name: 'MainMenu',
   data () {
     return {
-      tabSelected: false
+      tabSelected: this.$router.currentRoute.name !== 'Home'
     }
   }
 }
@@ -125,9 +125,32 @@ export default {
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: red;
       transform: scaleX(0);
       transition: 0.5s;
+    }
+
+    a.project-tab::after {
+      background: rgb(255,155,248);
+      background: -moz-linear-gradient(90deg, rgba(255,155,248,1) 0%, rgba(133,62,255,1) 50%, rgba(1,207,255,1) 100%);
+      background: -webkit-linear-gradient(90deg, rgba(255,155,248,1) 0%, rgba(133,62,255,1) 50%, rgba(1,207,255,1) 100%);
+      background: linear-gradient(90deg, rgba(255,155,248,1) 0%, rgba(133,62,255,1) 50%, rgba(1,207,255,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff9bf8",endColorstr="#01cfff",GradientType=1);
+    }
+
+    a.resume-tab::after {
+      background: rgb(132,255,29);
+      background: -moz-linear-gradient(90deg, rgba(132,255,29,1) 0%, rgba(195,255,59,1) 10%, rgba(255,0,0,1) 100%);
+      background: -webkit-linear-gradient(90deg, rgba(132,255,29,1) 0%, rgba(195,255,59,1) 10%, rgba(255,0,0,1) 100%);
+      background: linear-gradient(90deg, rgba(132,255,29,1) 0%, rgba(195,255,59,1) 10%, rgba(255,0,0,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#84ff1d",endColorstr="#ff0000",GradientType=1);
+    }
+
+    a.contact-tab::after {
+      background: rgb(255,225,88);
+      background: -moz-linear-gradient(90deg, rgba(255,225,88,1) 0%, rgba(255,122,65,1) 50%, rgba(255,0,0,1) 100%);
+      background: -webkit-linear-gradient(90deg, rgba(255,225,88,1) 0%, rgba(255,122,65,1) 50%, rgba(255,0,0,1) 100%);
+      background: linear-gradient(90deg, rgba(255,225,88,1) 0%, rgba(255,122,65,1) 50%, rgba(255,0,0,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe158",endColorstr="#ff0000",GradientType=1);
     }
 
     a:hover::after {

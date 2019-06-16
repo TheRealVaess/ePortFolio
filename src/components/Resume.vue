@@ -4,12 +4,10 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Resume'
 }
 </script>
 
 <style scoped>
-p {
-  color: white;
-}
+
 </style>
