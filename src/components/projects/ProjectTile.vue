@@ -34,6 +34,7 @@ export default {
   position: relative;
   width: 20%;
   margin: 15px;
+  border: 1px rgb(30, 30, 30) solid;
   border-radius: 3px;
   background-color: white;
   background-size: contain;

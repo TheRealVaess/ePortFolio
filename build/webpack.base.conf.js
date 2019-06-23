@@ -74,6 +74,17 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.(pdf)(\?.*)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              name: 'files/[name].[hash:8].[ext]'
+            }
+          }
+        ]
       }
     ]
   },
